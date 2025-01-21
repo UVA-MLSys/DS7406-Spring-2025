@@ -5,14 +5,14 @@
 #SBATCH --gres=gpu:v100:1
 #SBATCH --time=1:00:00
 #SBATCH --mem=16GB
-#SBATCH --account=ds6011-sp22-002
+#SBATCH --account=YOUR_RIVANNA_ACCOUNT_GROUP
 
 # Load CUDA and CUDNN for training deep learning models
-module load cuda cudnn anaconda
+module load cuda cudnn miniforge
 
 # Activate Conda
 conda deactivate
-conda activate ~/anaconda3/envs/ml
+conda activate ml
 
 # demo code
 python test_gpu.py
