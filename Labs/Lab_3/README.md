@@ -19,10 +19,10 @@ This lab, you may use either PyTorch or TensorFlow (based on your own preference
 
 ### Loss-Epoch Plot
 
-![](./epoch%20vs%20loss.jpg)
+<img src="./epoch%20vs%20loss.jpg" alt="Loss-Epoch Plot" width="400">
 
 ### Accuracy-Epoch Plot
 
-![](./epoch%20vs%20accuracy.jpg)
+<img src="./epoch%20vs%20accuracy.jpg" alt="Accuracy-Epoch Plot" width="400">
 
 
