@@ -14,12 +14,15 @@ Getting the environment includes
 
 1. Open [Rivanna Ondemand](https://ood.hpc.virginia.edu/pun/sys/dashboard)
 2. Goto `Interactive Apps -> JupyterLab`
-3. Launch a GPU session. The following shows a session opened in the scratch directory using V100 GPU and 16GB memory for 1h. <div align="center"> <img src='./rivanna%20ondemand.jpg' width='65%' /> </div>
+3. Launch a GPU session. The following shows a session opened in the scratch directory using V100 GPU and 16GB memory for 1h. <div align="center"> <img src='./rivanna%20ondemand.jpg' width='45%' /> </div>
 4. Connect the session and open a terminal. Clone the course [git repository](https://github.com/UVA-MLSys/DS7406-Spring-2025). And open the [MNIST_Tensorflow](./MNIST_TensorFlow.ipynb) notebook. For kernel, you can choose the existing Tensorflow 2.17 kernel from the top right corner of the notebook in Rivanna session editor.
 
 ## Model Training & Evaluation
 
-This lab will train a simple CNN with TensorFlow2 using the MNIST dataset. The [MNIST_Tensorflow](./MNIST_TensorFlow.ipynb) notebook already contains all implementations. Your task will be to made necessary modifications to recornd the benchmarks for submission.
+1. This lab will train a simple CNN with TensorFlow2 using the MNIST dataset. which contains greyscale handwritten digits. Each image is 28x28 pixels, you can see a sample below: <div align="center"> <img src='./mnist.jpg' width='45%' /> </div>
+2. Our goal is to build a CNN that can take one of these images and predict the digit in the image. <div align="center"> <img src='./train_process.jpg' width='55%' /> </div>
+3. Here is how the structure for our CNN model looks like <div align="center"> <img src='./custom_model.jpg' width='40%' /> </div>
+4. The [MNIST_Tensorflow](./MNIST_TensorFlow.ipynb) notebook already contains all implementations. Your task will be to made necessary modifications to recornd the benchmarks for submission.
 
 ## Submission
 
