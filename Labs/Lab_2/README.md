@@ -1,5 +1,15 @@
-For Lab 2, you will need to run a simple CNN with PyTorch using the MNIST dataset on Rivanna. Then,
-a. you will need to compare the execution time of each epoch on TensorFlow and PyTorch, as well as the total time used for the entire experiment.
-b. Furthermore, you will then need to perform Part a. on different GPUs(e.g. A100, V100), and record the execution time under different settings.
-c. Please provide possible strategies/comments to speed up the experiments, or to decrease the execution cost.
-d. Submit your answers to the #labs channel on Slack.
+# Introduction
+
+For Lab 2, you will need to run a simple CNN/DNN with PyTorch using the MNIST dataset on Rivanna. Then,
+
+1. Evaluation:
+   1. Compare the execution time and memory usage for training using these two different models.
+   2. Compare the accuracy, F1-score
+2. Perform Part 1 on different GPUs(e.g. A100, V100), and record the execution time under different settings.
+3. Provide possible strategies/comments to speed up the experiments, or to decrease the execution cost. Few examples are:
+   1. Earlystopping to stop the training early if validation doesn't improve for some epochs. 
+   2. Save the best model by validation loss and load that model for testing.
+   3. Pin dataloader memory.
+4. Experiment with model/hyperparameter tuning and data augmentation techniques to improve the test accuracy. Share your insights. You can consider the current test F1-score as the baseline.
+   1. Learning rate, dropout rate, number of layers.
+   2. Flip, rotate, blur the image using torchvision transforms.
